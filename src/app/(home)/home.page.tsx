@@ -9,10 +9,10 @@ import { FC } from 'react';
 
 export const HomePage: FC = ({}) => {
   return (
-    <div className="flex flex-col gap-20">
+    <main className="flex flex-col gap-20">
       <HeroSection />
       <ServicesSection />
       <ThumbnailSection />
-    </div>
+    </main>
   );
 };

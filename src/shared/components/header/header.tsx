@@ -12,11 +12,11 @@ export const Header: FC = ({}) => {
       <div className="flex items-center justify-between responsive-container h-[100px]">
         <Logo />
 
-        <Button className="max-sm:w-fit">
-          <Link
-            href={CLIENT_ROUTES.CONTACT_US}
-            className=""
-          >
+        <Link
+          href={CLIENT_ROUTES.CONTACT_US}
+          className=""
+        >
+          <Button className="max-sm:w-fit">
             <Typography
               size={'base'}
               className="font-medium max-sm:hidden"
@@ -25,8 +25,8 @@ export const Header: FC = ({}) => {
             </Typography>
 
             <Send className="mx-auto sm:hidden" />
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </div>
     </div>
   );

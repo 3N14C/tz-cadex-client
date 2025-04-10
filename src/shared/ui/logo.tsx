@@ -13,7 +13,7 @@ export const Logo: FC = ({}) => {
           size={'h2'}
           className="font-medium"
         >
-          TZ CAD-X
+          TZ CADEX
         </Typography>
       </Link>
     </div>

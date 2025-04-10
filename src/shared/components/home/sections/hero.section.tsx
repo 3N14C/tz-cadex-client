@@ -6,7 +6,7 @@ import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 
 export const HeroSection: FC = ({}) => {
   return (
-    <div className="bg-primary-zinc py-10">
+    <section className="bg-primary-zinc py-10">
       <div className="flex items-center justify-between responsive-container max-xl:flex-col max-xl:gap-10">
         <div className="flex flex-col gap-5 items-start max-w-[500px] max-xl:max-w-full max-xl:text-center max-xl:items-center">
           <Typography size={'h1'}>Elevate Your Digital Experience</Typography>
@@ -27,6 +27,6 @@ export const HeroSection: FC = ({}) => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };

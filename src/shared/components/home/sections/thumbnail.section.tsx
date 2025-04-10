@@ -5,10 +5,9 @@ import { Button, Typography } from '@/shared/ui';
 import Link from 'next/link';
 import { FC } from 'react';
 
-
 export const ThumbnailSection: FC = ({}) => {
   return (
-    <div className="bg-primary-zinc h-[400px]">
+    <section className="bg-primary-zinc h-[400px]">
       <div className="responsive-container flex flex-col items-center h-full justify-center gap-10">
         <div className="flex flex-col items-center gap-2">
           <Typography size={'h1'}>Get in Touch</Typography>
@@ -35,6 +34,6 @@ export const ThumbnailSection: FC = ({}) => {
           </Button>
         </Link>
       </div>
-    </div>
+    </section>
   );
 };
