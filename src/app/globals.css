@@ -130,6 +130,14 @@
 
 .responsive-container {
   @apply max-w-[1440px] mx-auto w-full;
+
+  @media (width < 1440px) {
+    @apply px-10;
+  }
+
+  @media (width < 1280px) {
+    
+  }
 }
 
 @layer base {

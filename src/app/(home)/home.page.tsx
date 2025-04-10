@@ -7,9 +7,7 @@ import {
 } from '@/shared/components/home/sections';
 import { FC } from 'react';
 
-interface IProps {}
-
-export const HomePage: FC<IProps> = ({}) => {
+export const HomePage: FC = ({}) => {
   return (
     <div className="flex flex-col gap-20">
       <HeroSection />

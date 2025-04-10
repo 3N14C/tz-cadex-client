@@ -1,9 +1,10 @@
 'use client';
 
-import { FC } from 'react';
-import { Button, Logo, Typography } from '@/shared/ui';
-import Link from 'next/link';
 import { CLIENT_ROUTES } from '@/configs';
+import { Button, Logo, Typography } from '@/shared/ui';
+import { Send } from 'lucide-react';
+import Link from 'next/link';
+import { FC } from 'react';
 
 interface IProps {}
 
@@ -13,17 +14,19 @@ export const Header: FC<IProps> = ({}) => {
       <div className="flex items-center justify-between responsive-container h-[100px]">
         <Logo />
 
-        <Button className="">
+        <Button className="max-sm:w-fit">
           <Link
             href={CLIENT_ROUTES.CONTACT_US}
             className=""
           >
             <Typography
               size={'base'}
-              className="font-medium"
+              className="font-medium max-sm:hidden"
             >
               Contact us
             </Typography>
+
+            <Send className="mx-auto sm:hidden" />
           </Link>
         </Button>
       </div>

@@ -10,7 +10,7 @@ interface IProps {
 
 export const ServiceCard: FC<IProps> = ({ service }) => {
   return (
-    <div className="flex flex-col items-start gap-1">
+    <div className="flex flex-col items-center gap-1 text-center max-w-[350px] w-full">
       <Typography
         size={'h3'}
         className=""

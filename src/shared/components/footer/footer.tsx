@@ -3,17 +3,15 @@
 import { Typography } from '@/shared/ui';
 import { FC } from 'react';
 
-interface IProps {}
-
-export const Footer: FC<IProps> = ({}) => {
+export const Footer: FC = ({}) => {
   return (
-    <div className="border-t sticky bottom-0 bg-white z-20 overflow-hidden h-[100px]">
+    <div className="border-t sticky bottom-0 bg-white z-20 overflow-hidden h-[100px] max-sm:h-[80px]">
       <div className="responsive-container h-full flex flex-col items-center justify-center">
         <Typography
           size={'h3'}
-          className="font-medium"
+          className="font-medium text-center max-sm:text-lg"
         >
-          Some company 2024
+          CAD-X Exchange © 2024. All rights reserved.
         </Typography>
       </div>
     </div>

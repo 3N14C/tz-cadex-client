@@ -4,27 +4,25 @@ import { Typography } from '@/shared/ui';
 import { FC } from 'react';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 
-interface IProps {}
-
-export const HeroSection: FC<IProps> = ({}) => {
+export const HeroSection: FC = ({}) => {
   return (
     <div className="bg-primary-zinc py-10">
-      <div className="flex items-center justify-between responsive-container">
-        <div className="flex flex-col gap-5 items-start max-w-[500px]">
-          <Typography size={'h1'}>Most important title on the page</Typography>
+      <div className="flex items-center justify-between responsive-container max-xl:flex-col max-xl:gap-10">
+        <div className="flex flex-col gap-5 items-start max-w-[500px] max-xl:max-w-full max-xl:text-center max-xl:items-center">
+          <Typography size={'h1'}>Elevate Your Digital Experience</Typography>
           <Typography size={'base'}>
-            Lorem Ipsum dolor sit amet consectetur adiptscing elit- Aliquam
-            mattis, leo et condimentum ultricies, sem uma convallis metus, vel
-            suscipit nibh lacus tincidunt ante
+            Innovative solutions tailored to your business needs. Our team
+            combines cutting-edge technology with proven methodologies to
+            deliver exceptional results for clients worldwide.
           </Typography>
         </div>
 
-        <div className="bg-primary-gray h-[350px] w-[700px]">
+        <div className="bg-primary-gray h-[350px] max-w-[700px] w-full">
           <LiteYouTubeEmbed
             id="dQw4w9WgXcQ"
             title="YouTube video player"
             poster="hqdefault"
-            wrapperClass="w-full h-full"
+            wrapperClass="w-full h-full cursor-pointer"
             iframeClass="w-full h-full"
           />
         </div>

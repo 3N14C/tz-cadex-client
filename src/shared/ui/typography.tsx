@@ -7,7 +7,7 @@ import { forwardRef } from 'react';
 const typographyVariants = cva('', {
   variants: {
     size: {
-      h1: 'text-[50px] font-semibold',
+      h1: 'text-[50px] font-semibold max-sm:text-4xl',
       h2: 'text-4xl font-bold',
       h3: 'text-[28px] font-medium',
       base: 'text-base',

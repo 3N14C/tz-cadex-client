@@ -42,9 +42,10 @@ export const ContactUsFeature: FC<IProps> = ({}) => {
       >
         Contact us
       </Typography>
+
       <form
         onSubmit={handleSubmit(sendContact)}
-        className="flex flex-col gap-5 max-w-[600px] w-full mx-auto border border-primary-gray rounded-lg p-5 bg-white"
+        className="flex flex-col gap-5 max-w-[600px] w-full mx-auto border border-primary-gray rounded-lg p-5 bg-white mt-5"
       >
         <Input
           {...register('name')}

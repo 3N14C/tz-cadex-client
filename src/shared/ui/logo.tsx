@@ -15,7 +15,7 @@ export const Logo: FC<IProps> = ({}) => {
           size={'h2'}
           className="font-medium"
         >
-          Some company
+          TZ CAD-X
         </Typography>
       </Link>
     </div>
