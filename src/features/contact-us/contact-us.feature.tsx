@@ -7,9 +7,7 @@ import { useForm } from 'react-hook-form';
 import { contactUsSchema, TContactUsSchema } from './entity/contact-us.schema';
 import { useContactUs } from './hooks/use-contact-us';
 
-interface IProps {}
-
-export const ContactUsFeature: FC<IProps> = ({}) => {
+export const ContactUsFeature: FC = ({}) => {
   const { sendContact, isPendingContactUs, isSuccess, serverResponse } =
     useContactUs();
   const {

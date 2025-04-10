@@ -1,13 +1,11 @@
 'use client';
 
+import { CLIENT_ROUTES } from '@/configs';
+import Link from 'next/link';
 import { FC } from 'react';
 import { Typography } from './typography';
-import Link from 'next/link';
-import { CLIENT_ROUTES } from '@/configs';
 
-interface IProps {}
-
-export const Logo: FC<IProps> = ({}) => {
+export const Logo: FC = ({}) => {
   return (
     <div className="">
       <Link href={CLIENT_ROUTES.HOME}>
